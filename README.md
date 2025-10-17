@@ -49,9 +49,10 @@ Make sure you have Python 3.10+ installed. Create and activate a python environm
       pip install -r requirements.txt
 
 5. **Download Dataset**:
-Download the Pokémon image dataset from [here](https://www.kaggle.com/datasets/kvpratama/pokemon-images-dataset) and save it in a folder named pokemon_images in the main directory of the project.
+Download the Pokémon image dataset for the main webpage from [here](https://www.kaggle.com/datasets/kvpratama/pokemon-images-dataset) and save it in a folder named pokemon_images in the main directory of the project.
+Download the Pokémon image training dataset for the CNN from [here](https://www.kaggle.com/datasets/thedagger/pokemon-generation-one) and save it in the main directory of the project.
 
-6. **Web scrape the data**
+7. **Web scrape the data**
 Run the scrape.py script to create the csv file pokemon_newer.csv
 
 4. **Set Up the Database**:
@@ -61,7 +62,7 @@ Run the create_db_table.py script to create and populate the SQLite database:
     
 5. **Train the Model**:
 1st update the file paths in the model_training.py file (to reflect your local file architecture).
-Then run this file,
+Then run this file to get a model.h5 file
     ```bash
     python model_training.py
 
